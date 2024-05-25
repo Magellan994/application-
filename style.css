@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+p{
+    margin-top: 90px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+
+  }
+  
+
+  .two{
+    margin-top: 30px;
+  }
+
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+
+.image-container:hover .overlay {
+    left: 0;
+    opacity: 1;
+}
+
+.overlay img {
+    width: 100%;
+    height: 100%;
+}
