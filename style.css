@@ -80,3 +80,20 @@ table {
         display: contents;
     }
 }
+
+.owl-carousel .item img {
+    width: 100%;
+  }
+
+  .first{
+    @media (max-width: 600px) {
+     display: none;   
+    }
+  }
+  .second{
+    display: none;
+    @media (max-width: 600px) {
+        display: contents;
+    
+    }
+  }
